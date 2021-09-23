@@ -27,11 +27,11 @@
 	min-height: 48px;
 	// .btn_white
 	&_white {
-		color: $orangeColor;
+		color: #ccc;
 		background-color: #fff;
 		@media (any-hover: hover) {
 			&:hover {
-				background-color: $orangeColor;
+				background-color: #ccc;
 				color: #fff;
 			}
 		}

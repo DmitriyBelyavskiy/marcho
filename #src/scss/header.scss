@@ -1,6 +1,81 @@
 //====================================================================================================
 @use "sass:math";
 // line-height: math.div(29, 24) * 100%;
+.header {
+    padding: 40px 0;
+    // .header__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+.menu {
+
+    // .menu__list
+
+    &__list {
+        display: flex;
+        
+    }
+
+    // .menu__list-item
+
+    &__list-item + .menu__list-item {
+        padding-left: 35px;
+        text-transform: uppercase;
+    }
+
+    // .menu__list-link
+
+    &__list-link {
+        color: $titleColor;
+        padding: 0px 0px 1px 0px;
+        transition: all 0.5s ease 0s;
+        font-family: 'Quicksand-Regular';
+        &:hover{
+        font-family: 'Quicksand-Medium';
+            color: $accentColor;
+            border-bottom: 1px solid $accentColor;
+        }
+    
+    }
+    &__list-link--active{
+        font-family: 'Quicksand-Medium';
+            color: $accentColor;
+            border-bottom: 1px solid $accentColor;
+    }
+  
+}
+.user-nav {
+    display: flex;
+    // .user-nav__link
+
+    &__link + .user-nav__link {
+        padding: 0px 0px 0px 25px;
+    }
+    &__link{
+        position: relative;
+    }
+    &__num{
+        position: absolute;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: $accentColor;
+        color: #fff;
+        top: -9px;
+        right: -14px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+
+    }
+}
+
 
 
 	
