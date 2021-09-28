@@ -34,17 +34,17 @@
     &__list-link {
         color: $titleColor;
         padding: 0px 0px 1px 0px;
-        transition: all 0.5s ease 0s;
-        font-family: 'Quicksand-Regular';
+        transition: all 0.3s ease 0s;
+        font-family: 'Roboto-Regular';
         &:hover{
-        font-family: 'Quicksand-Medium';
+        font-family: 'Roboto-Bold';
             color: $accentColor;
             border-bottom: 1px solid $accentColor;
         }
     
     }
     &__list-link--active{
-        font-family: 'Quicksand-Medium';
+        font-family: 'Roboto-Bold';
             color: $accentColor;
             border-bottom: 1px solid $accentColor;
     }
