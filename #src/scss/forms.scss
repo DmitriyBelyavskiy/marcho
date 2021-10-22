@@ -283,7 +283,8 @@ textarea.input {
 .rating {
 	display: flex;
 	align-items: flex-end;
-	font-size: 40px;
+	justify-content: center;
+	font-size: 25px;
 	line-height: 0.75;
 	transition: opacity 0.3s ease 0s;
 }
@@ -301,10 +302,11 @@ textarea.input {
 .rating__body::before {
 	content: "★★★★★";
 	display: block;
+	color: #ccccce;
 }
 .rating__active {
 	position: absolute;
-	width: 0%;
+	width: 50%;
 	height: 100%;
 	top: 0;
 	left: 0;
@@ -334,7 +336,7 @@ textarea.input {
 	opacity: 0;
 }
 .rating__value {
-	font-size: 50%;
+	font-size: 0;
 	line-height: 1;
 	padding: 0px 0px 0px 10px;
 }
